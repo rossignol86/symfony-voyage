@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le Continent Européen{% endblock %}
+
+{% block body %}
+<header>
+  <img class="imagescover" src="{{ asset('images/europe/europe.jpg') }}" alt="Super photo de Rome plus belles villes en Europe">
+  <div class="europe">
+    <h1>Choisissez le pays de votre destination sur le continent européen</h1>
+  </div>  
+</header>
+
+<main class="contenu-continent">
+
+<main class="contenu-continent">
+
+    <section class="destinations">
+
+      <div class="destination-card">
+        <img src="{{ asset('images/europe/france.jpg') }}" alt="Superbe photo du Musée du Louvre à Paris">
+        <h2 class="titrecontinents">France</h2>
+        <p>La France est un pays reconnu pour son patrimoine culturel exceptionnel, ses monuments historiques et sa gastronomie raffinée, comme le fromage, le vin et les pâtisseries. <br> Elle attire des millions de visiteurs grâce à ses villes emblématiques, et ses paysages divers, entre montagnes, plages et campagnes. Berceau des arts et des lumières, la France incarne l’élégance, la créativité et l’histoire européenne.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent" href="{{ path('france') }}">En savoir plus</a>
+        </div>  
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/europe/espagne.jpg') }}" alt="Superbe photo de la ville de Barcelone">
+        <h2 class="titrecontinents">Espagne</h2>
+        <p>L’Espagne est un pays vibrant, célèbre pour sa culture riche, ses fêtes animées comme la corrida et la feria, et son héritage architectural, avec des monuments comme la Sagrada Familia. <br> Sa cuisine généreuse, incluant la paella et les tapas, reflète la diversité de ses régions. Entre plages ensoleillées, montagnes et villes historiques, l’Espagne offre une ambiance chaleureuse et festive toute l’année.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/europe/italie.jpg') }}" alt="Superbe photo de la ville de Venise et de ses gondoles">
+        <h2 class="titrecontinents">Italie</h2>
+        <p>L’Italie est un pays chargé d’histoire, célèbre pour ses trésors artistiques comme le Colisée, la Renaissance florentine, et sa cuisine emblématique, avec des plats comme les pâtes, la pizza et le gelato. Ses paysages variés, entre côtes méditerranéennes, montagnes et campagnes toscanes, séduisent les voyageurs. <br> L’Italie incarne à la fois tradition, élégance et passion, reflétée dans son art, sa mode et son mode de vie.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent">En savoir plus</a>
+        </div>  
+      </div>
+
+      
+      <div class="destination-card">
+        <img src="{{ asset('images/europe/angleterre.jpg') }}" alt="Superbe photo de la ville de Venise et de ses gondoles">
+        <h2 class="titrecontinents">Angleterre</h2>
+        <p>L’Angleterre est une nation historique du Royaume-Uni, réputée pour sa monarchie, ses paysages verdoyants et sa culture influente. <br>
+        Londres, sa capitale, est une métropole dynamique mêlant tradition et modernité.
+        Entre châteaux médiévaux, pubs chaleureux et patrimoine littéraire, l’Angleterre séduit les voyageurs du monde entier.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent">En savoir plus</a>
+        </div>  
+      </div>
+  
+    </section>
+    
+</main>
+    
+</main>
+
+<footer class="footer">
+  <div>
+      <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+  </div>
+  <div class="blocsite">
+      <a class="textesite" href="https://rossignolfranck.alwaysdata.net/portfolio/" target="_blank">Franck Rossignol - Consulter mon site</a>
+  </div>
+</footer>
+
+{% endblock %}

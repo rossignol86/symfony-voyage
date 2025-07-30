@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La France{% endblock %}
+
+{% block body %}
+<header>
+  <img class="imagescover" src="{{ asset('images/europe/lavande.jpg') }}" alt="Super photo de Rome plus belles villes en Europe">
+  <div class="france">
+    <h1>Bienvenue en France, 6 grandes destinations sélectionnées pour vous !</h1>
+  </div>  
+</header>
+
+
+
+  <main class="contenu-continent">
+
+      <section class="destinations">
+
+        <div class="destination-card">
+          <img src="{{ asset('images/europe/stmichel.jpg') }}" alt="Superbe photo du Mont Saint Michel">
+          <h2 class="titrecontinents">Le Mont Saint-Michel</h2>
+          <details>
+            <summary class="titresummary"> Cliquez ici pour découvrir la destination</summary>
+            <p>Le Mont-Saint-Michel est un îlot rocheux situé en Normandie, célèbre pour son abbaye médiévale perchée au sommet. Entouré par les marées les plus fortes d’Europe, il offre un spectacle naturel saisissant. Classé au patrimoine mondial de l’UNESCO, c’est l’un des sites touristiques les plus emblématiques de France.</p>
+          </details>
+          <p><strong>Durée :</strong> 10 jours / 8 nuits</p>
+          <p><strong>Hébergement :</strong> Hôtel ★★★★</p>
+          <p><strong>Prochain départ :</strong> 5 septembre 2025</p>
+          <p><strong>Thématique :</strong> Classique - Nature</p>
+          <p class="prix-sejour"><strong>À partir de :</strong> 970 € / pers</p>
+
+          <div class="button">
+            <a class="textebutton" target="_parent" href="{{ path('reservation') }}">Réserver</a>
+          </div>  
+        </div>
+
+        <div class="destination-card">
+          <img src="{{ asset('images/europe/louvre.jpg') }}" alt="Superbe photo du Musée du Louvre à Paris">
+          <h2 class="titrecontinents">Le Musée du&nbsp;Louvre</h2>
+          <details>
+            <summary class="titresummary"> Cliquez ici pour découvrir la destination</summary>
+            <p>Le Louvre, situé à Paris, est l’un des plus grands musées du monde, célèbre pour sa vaste collection d’art allant de l’Antiquité à l’époque moderne. Ancien palais royal, il abrite des chefs-d’œuvre comme la Joconde et la Vénus de Milo. Chaque année, des millions de visiteurs viennent admirer son architecture et ses trésors artistiques.</p>
+          </details>
+          <p><strong>Durée :</strong> 3 jours / 2 nuits</p>
+          <p><strong>Hébergement :</strong> Meublé RB&B</p>
+          <p><strong>Prochain départ :</strong> 2 novembre 2025</p>
+          <p><strong>Thématique :</strong> Culture - Histoire - Arts</p>
+          <p class="prix-sejour"><strong>À partir de :</strong> 300 € / pers</p>
+
+          <div class="button">
+            <a class="textebutton" target="_parent" href="{{ path('reservation') }}">Réserver</a>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="{{ asset('images/europe/bonifacio.jpg') }}" alt="Superbe photo de la ville de Bonifacio en Corse">
+          <h2 class="titrecontinents">Bonifacio</h2>
+          <details>
+          <summary class="titresummary"> Cliquez ici pour découvrir la destination</summary>
+          <p>Avec ses falaises blanches en calcaire, Bonifacio est un des lieux les plus célèbres de l’île de beauté. <br>
+            - Dans la ville haute qui est bâtie sur les falaises, vous pourrez flâner dans la citadelle et dans la vieille ville. <br>
+            - Dans la ville basse, vous profiterez du port de plaisance de Bonifacio, de ses quais animés et bénéficierez d’une vue magnifique sur les falaises blanches et sur la citadelle.</p>
+          </details>
+          <p><strong>Durée :</strong> 15 jours / 12 nuits</p>
+          <p><strong>Hébergement :</strong> Hôtel ★★★★</p>
+          <p><strong>Prochain départ :</strong> 1 juillet 2026</p>
+          <p><strong>Thématique :</strong> Tourisme - Gastronomie - Croisière</p>
+          <p class="prix-sejour"><strong>À partir de :</strong> 1500 € / pers</p>
+
+          <div class="button">
+            <a class="textebutton" target="_parent" href="{{ path('reservation') }}">Réserver</a>
+          </div>  
+        </div>
+
+        <div class="destination-card">
+          <img src="{{ asset('images/europe/alsace.jpg') }}" alt="Superbe photo de la ville de strasbourg en Alsace">
+          <h2 class="titrecontinents">Strasbourg</h2>
+          <details>
+            <summary class="titresummary"> Cliquez ici pour découvrir la destination</summary>
+            <p>Avec ses petits villages dignes de contes de fées, ses maisons à colombages, et sa célèbre flammekueche, l’Alsace vous enchantera ! Les villes de Strasbourg et de Colmar, par exemple, ont une architecture gothique inimitable, de petits canaux et des maisons fleuries qui risqueraient bien de vous faire tomber sous le charme. Vous partirez sur la Route des vins et découvrirez les plus beaux villages alsaciens entourés de vignobles, </p>
+          </details>    
+          <p><strong>Durée :</strong> 3 jours / 2 nuits</p>
+          <p><strong>Hébergement :</strong> Hôtel ★★★★</p>
+          <p><strong>Prochain départ :</strong> 24 décembre 2025</p>
+          <p><strong>Thématique :</strong> Marché de noël</p>
+          <p class="prix-sejour"><strong>À partir de :</strong> 200 € / pers</p>
+          
+        <div class="button">
+            <a class="textebutton" target="_parent" href="{{ path('reservation') }}">Réserver</a>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="{{ asset('images/europe/bretagne.jpg') }}" alt="Superbe photo de La Côte de Granit Rose en Bretagne">
+          <h2 class="titrecontinents">La Côte de&nbsp;Granit Rose</h2>
+          <details>
+            <summary class="titresummary"> Cliquez ici pour découvrir la destination</summary>
+            <p>Découvrez en Bretagne ce littoral unique bordé de rochers de granit rose sculptés par la mer. Une palette de couleurs saisissante et des paysages sauvages à couper le souffle. Je vous recommande de partir à la découverte du sentier des douaniers, qui offre des points de vue spectaculaires sur la côte. Ne manquez pas le coucher de soleil sur la plage de Trestraou, un moment magique !</p>
+          </details>           
+          <p><strong>Durée :</strong> 15 jours / 12 nuits</p>
+          <p><strong>Hébergement :</strong> Village vacances ★★★</p>
+          <p><strong>Prochain départ :</strong> 1 juillet 2026</p>
+          <p><strong>Thématique :</strong> Tourisme - Gastronomie - Pêche</p>
+          <p class="prix-sejour"><strong>À partir de :</strong> 2000 € le séjour / 4 pers</p>
+    
+          <div class="button">
+            <a class="textebutton" target="_parent" href="{{ path('reservation') }}">Réserver</a>
+          </div>  
+        </div>
+
+        <div class="destination-card">
+          <img src="{{ asset('images/europe/chateaux.jpg') }}" alt="Superbe photo des Châteaux de la Loire (Centre-Val de Loire)">
+          <h2 class="titrecontinents">Les Châteaux de&nbsp;la Loire</h2>
+          <details>
+            <summary class="titresummary"> Cliquez ici pour découvrir la destination</summary>
+            <p>Partez en montgolfière découvrir les châteaux de la Loire, tels que Chambord, Chenonceau et Amboise, qui témoignent de la richesse de l’histoire de France. <br> Je suis toujours émerveillé par l’élégance de ces demeures royales et la beauté de leurs jardins. Je vous conseille de louer un vélo pour parcourir les bords de Loire et profiter pleinement de la douceur de vivre de la région.</p>
+          </details>       
+          <p><strong>Durée :</strong> 1 jour</p>
+          <p><strong>Hébergement :</strong> - </p>
+          <p><strong>Prochain départ :</strong> 1 juillet 2026</p>
+          <p><strong>Thématique :</strong> Balade en montgolfière</p>
+          <p class="prix-sejour"><strong>À partir de :</strong> 100 € / pers</p>
+    
+          <div class="button">
+            <a class="textebutton" target="_parent" href="{{ path('reservation') }}">Réserver</a>
+          </div>  
+        </div>
+    
+      </section>
+      
+  </main>
+    
+
+
+<footer class="footer">
+  <div>
+      <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+  </div>
+  <div class="blocsite">
+      <a class="textesite" href="https://rossignolfranck.alwaysdata.net/portfolio/" target="_blank">Franck Rossignol - Consulter mon site</a>
+  </div>
+</footer>
+
+{% endblock %}

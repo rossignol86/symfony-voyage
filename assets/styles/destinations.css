@@ -1,0 +1,204 @@
+
+* {
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  background-image: url('/assets/images/fond-voyage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imagescover {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 320px;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    object-fit: cover;
+}
+h1 {
+    margin: -0.25rem auto;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+    align-content: center;
+}
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    color:rgb(255, 255, 255);
+}
+
+/* bandeau continent */
+.acceuil {
+    width: 100%;
+    background-color: #1b9329;
+}
+.europe {
+    width: 100%;
+    background-color: #1b4593;
+}
+.amerique {
+    width: 100%;
+    background-color: #ff8400;
+}
+.asie {
+    width: 100%;
+    background-color: #931b1b;
+}
+
+/* bandeau pays */
+.france {
+    width: 100%;
+    background-color: #1b2793;
+}
+
+/* cards pays */
+.titrecontinents {
+    color:brown;
+    font-family: "Roboto", sans-serif;
+}
+.destinations {
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.destination-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+}
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.destination-card img:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.destination-card h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+.destination-card p{
+    font-size: 1rem;
+    text-align: left;
+}
+.button{
+    margin: 0 auto;
+    align-items: center;
+    width: 150px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: brown;
+}
+.titresummary{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 160px;
+    position:absolute;
+    background-color:bisque;
+    padding-top: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+.blocsite{
+    height: 60px;
+    padding: 10px;
+}
+.textesite{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+
+/* bouton en savoir plus */
+.button {
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 2px solid brown;
+    border-radius: 5px;
+    background-color: white;
+} 
+.button a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color:brown;
+}
+.button:hover {
+    background-color: brown;
+    color: white;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    transform: translateY(-2px);
+}
+.button:hover a {
+    background-color: brown;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* information séjours */
+.duree-sejour {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.prix-sejour {
+  color: #b40000; /* Rouge foncé, pour attirer l’œil */
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  background-color: #fceaea; /* Léger fond rosé */
+  padding: 8px 12px;
+  border-left: 4px solid #b40000;
+  border-radius: 4px;
+}

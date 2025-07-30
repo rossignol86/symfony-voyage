@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/reservation.css') }}">
+{% endblock %}
+
+{% block title %}Réservation{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h2 class="reservation">Contact</h2>
+    <form method="post" action="#">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="agence">Agence de voyage :</label>
+        <input type="text" id="agence" name="agence">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="0123456789">
+
+        <label for="objet">Objet :</label>
+        <input type="text" id="objet" name="objet" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+
+
+
+<footer class="footer">
+    <div>
+        <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+    </div>
+    <div class="blocsite">
+        <a class="textesite" href="https://rossignol86.github.io/FranckRossignol/" target="_blank">Franck Rossignol - Consulter mon site</a>
+    </div>
+</footer>
+{% endblock %}

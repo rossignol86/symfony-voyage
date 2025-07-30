@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le continent asiatique{% endblock %}
+
+{% block body %}
+<header>
+  <img class="imagescover" src="{{ asset('images/asie/asie.jpg') }}" alt="Superbe photo de personnes travaillant dans des rizières">
+  <div class="asie">
+    <h1>Choisissez le pays de votre destination sur le continent asiatique</h1>
+  </div>  
+</header>
+
+<main class="contenu-continent">
+
+    <!-- section des 3 cards des pays d'europe -->
+    <section class="destinations">
+
+      <div class="destination-card">
+        <img src="{{ asset('images/asie/chine.jpg') }}" alt="Superbe photo de la ville de Tokyo">
+        <h2 class="titrecontinents">Chine</h2>
+        <p>La Chine, vaste pays d’Asie, fascine par sa richesse culturelle millénaire et ses paysages contrastés, des montagnes sacrées aux mégalopoles futuristes.
+        Berceau de grandes inventions et de philosophies comme le confucianisme, elle mêle traditions ancestrales et modernité.
+        Des rizières du Yunnan à la Grande Muraille, chaque région offre un voyage unique au cœur d’une civilisation exceptionnelle.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent" >En savoir plus</a>
+        </div>  
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/asie/japon.jpg') }}" alt="Superbe photo de la ville de Tokyo">
+        <h2 class="titrecontinents">Japon</h2>
+        <p>Le Japon est un pays fascinant où se mêlent traditions millénaires et technologies de pointe, entre temples anciens et villes ultramodernes. <br> Sa culture riche, incluant le théâtre kabuki, la cérémonie du thé et la cuisine raffinée comme les sushis, séduit le monde entier. Les paysages variés, des cerisiers en fleurs aux montagnes enneigées, offrent un cadre unique.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent" >En savoir plus</a>
+        </div>  
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/asie/thailland.jpg') }}" alt="Superbe photo d'un temple tailandais">
+        <h2 class="titrecontinents">Thailande</h2>
+        <p>La Thaïlande, connue comme le « pays du sourire », séduit par ses temples bouddhistes majestueux, ses plages paradisiaques et sa nature luxuriante. <br> Sa cuisine épicée et variée, comme le pad thaï et le curry, fait partie des plus renommées d’Asie. La Thaïlande allie traditions culturelles profondes et vie urbaine animée, offrant une expérience unique aux visiteurs.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent" >En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/asie/vietnam.jpg') }}" alt="Superbe photo d'une boutique vietnamien">
+        <h2 class="titrecontinents">Vietnam</h2>
+        <p>Le Vietnam est un pays d’Asie du Sud-Est riche en histoire et en culture, célèbre pour ses paysages magnifiques entre montagnes, rizières et plages. <br> Sa cuisine savoureuse, comme le pho et les rouleaux de printemps, est appréciée dans le monde entier. Le pays allie traditions anciennes et modernité dynamique, attirant de nombreux voyageurs chaque année.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent">En savoir plus</a>
+        </div>  
+      </div>
+  
+    </section>
+    
+</main>
+
+<footer class="footer">
+  <div>
+      <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+  </div>
+  <div class="blocsite">
+      <a class="textesite" href="https://rossignolfranck.alwaysdata.net/portfolio/" target="_blank">Franck Rossignol - Consulter mon site</a>
+  </div>
+</footer>
+
+{% endblock %}

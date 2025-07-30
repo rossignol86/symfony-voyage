@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil - Univers du Voyage{% endblock %}
+
+{% block body %}
+  <header>
+    <img class="imagescover" src="{{ asset('images/europe/plage.jpg') }}" alt="Superbe photo de plusieurs continents">
+     
+    <div class="acceuil">
+      <h1>Choisissez le Continent et le Pays de vos rêve !</h1>
+    </div>  
+  </header>
+
+  <main>
+    <section class="destinations">
+      <div class="destination-card">
+        <img src="{{ asset('images/europe/europe.jpg') }}" alt="Superbe photo de la ville de Prague">
+        <h2 class="titrecontinents">Europe</h2>
+        <p>L’Europe est un continent riche en histoire, en diversité culturelle et en patrimoine architectural remarquable. <br> De ses capitales emblématiques Paris, Londre, Berlin... ses paysages variés, elle incarne un carrefour de civilisations et d’innovations.</p>
+        <div class="button">
+          <a class="textebutton" href="{{ path('europe') }}">En savoir plus</a>
+        </div>  
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/asie/tokyo.jpg') }}" alt="Superbe photo d'Asie avec un temple">
+        <h2 class="titrecontinents">Asie</h2>
+        <p>L’Asie est le plus grand et le plus peuplé des continents, mêlant traditions ancestrales et modernité éclatante. <br> De la culture spirituelle de l’Inde aux technologies du Japon, elle offre une diversité impressionnante de peuples, paysages et cultures.</p>
+        <div class="button">
+          <a class="textebutton" href="{{ path('asie') }}">En savoir plus</a>
+        </div>
+      </div> 
+
+      <div class="destination-card">
+        <img src="{{ asset('images/ameriques/dessert.jpg') }}" alt="Superbe photo du plus grand désert des États-Unis">
+        <h2 class="titrecontinents">Amérique</h2>
+        <p>Les Amériques regroupent une immense diversité de cultures, de paysages et de peuples, allant de l’Arctique canadien aux forêts amazoniennes à la Patagonie. Ce continent mêle héritages anciens, comme les civilisations mayas et incas, à une modernité vibrante et influente.</p>
+        <div class="button">
+          <a class="textebutton" href="{{ path('amerique') }}">En savoir plus</a>
+        </div>  
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/australie/australie.jpg') }}" alt="Superbe photo du plus grand désert des États-Unis">
+        <h2 class="titrecontinents">Australie</h2>
+        <p>L’Australie est un vaste continent insulaire réputé pour sa nature sauvage, ses plages infinies et sa faune unique.
+        De Sydney à l’Outback, le pays offre un contraste saisissant entre modernité urbaine et terres ancestrales.
+        Terre d’aventure, de surf et de culture aborigène, l’Australie fascine tous les explorateurs.</p>
+        <div class="button">
+          <a class="textebutton">En savoir plus</a>
+        </div>  
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+      <div>
+          <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+      </div>
+      <div class="blocsite">
+          <a class="textesite" href="https://rossignol86.github.io/FranckRossignol/" target="_blank">Franck Rossignol - Consulter mon site</a>
+      </div>
+  </footer>
+{% endblock %}

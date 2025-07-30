@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mon site{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="stylesheet" href="{{ asset('styles/destinations.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="{{ asset('images/logo.jpg') }}" alt="Logo oiseau" class="logo">
+            <span class="site-title">voyagez.com</span>
+        </div>
+        <div class="nav-right">
+            <a href="{{ path('home') }}">Accueil</a>
+            <a href="{{ path('europe') }}">Europe</a>
+            <a href="{{ path('amerique') }}">Amérique</a>
+            <a href="{{ path('asie') }}">Asie</a>
+            <a>Australie</a>
+            <a href="{{ path('contact') }}">Contact</a>
+            <a></a>
+        </div>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+
+
+</body>
+</html>

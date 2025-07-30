@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le continent américain{% endblock %}
+
+{% block body %}
+<header>
+  <img class="imagescover" src="{{ asset('images/ameriques/newyork.jpg') }}" alt="Monument Valley, désert des États-Unis">
+  <div class="amerique">
+    <h1>Choisissez le pays de votre destination sur le continent américain</h1>
+  </div>  
+</header>
+
+<main class="contenu-continent">
+
+    <section class="destinations">
+
+        <div class="destination-card">
+        <img src="{{ asset('images/ameriques/argentine.jpg') }}" alt="Superbe photo">
+        <h2 class="titrecontinents">Argentine</h2>
+        <p>L’Argentine est un pays d’Amérique du Sud aux paysages spectaculaires, allant des glaciers de Patagonie aux chutes d’Iguazú et aux plaines de la pampa. <br> Elle est réputée pour le tango, sa passion du football et du rugby et sa gastronomie, notamment la viande grillée et le vin de Mendoza. L’Argentine offre un mélange captivant de traditions, de nature sauvage avec l'incroyable Patagonie et de culture vibrante.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent">En savoir plus</a>
+        </div>  
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/ameriques/bresil.jpg') }}" alt="Superbe photo de la plage de rio">
+        <h2 class="titrecontinents">Brésil</h2>
+        <p>Le Brésil est un pays d’Amérique du Sud célèbre pour sa biodiversité exceptionnelle, notamment l’Amazonie, et ses festivités colorées comme le carnaval de Rio. Sa culture vibrante mêle influences indigènes, africaines et européennes, visibles dans la musique, la danse et la cuisine. Avec ses plages paradisiaques et ses vastes paysages, le Brésil séduit par son énergie et sa richesse naturelle.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/ameriques/ameriques.jpg') }}" alt="Superbe photo de New-York">
+        <h2 class="titrecontinents">États-Unis</h2>
+        <p>Les États-Unis sont une nation vaste et diverse, connue pour son influence culturelle mondiale, ses grandes villes dynamiques comme New York et Los Angeles, des déserts du Sud-Ouest aux forêts du Nord. Berceau du rêve américain, le pays incarne l’innovation, la liberté et la diversité. Sa cuisine, ses musiques et son cinéma rayonnent dans le monde entier.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent">En savoir plus</a>
+        </div>  
+      </div>
+
+      <div class="destination-card">
+        <img src="{{ asset('images/ameriques/quebec.jpg') }}" alt="Superbe photo de la ville de Québec">
+        <h2 class="titrecontinents">Canada</h2>
+        <p>Le Canada séduit par ses grands espaces, ses forêts boréales, ses lacs immenses et ses hivers majestueux et froids. <br>
+        Entre Montréal francophone et Vancouver côtière, le pays mêle cultures, spécialités culinaires, langues et paysages variés.
+        Accueillant et paisible, le Canada est une destination idéale pour les amoureux de nature et des grands espaces et de sa diversité.</p>
+        <div class="button">
+          <a class="textebutton" target="_parent" >En savoir plus</a>
+        </div>  
+      </div>
+
+
+  
+    </section>
+    
+</main>
+
+<footer class="footer">
+  <div>
+      <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+  </div>
+  <div class="blocsite">
+      <a class="textesite" href="https://rossignolfranck.alwaysdata.net/portfolio/" target="_blank">Franck Rossignol - Consulter mon site</a>
+  </div>
+</footer>
+{% endblock %}
