@@ -6,7 +6,6 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="stylesheet" href="{{ asset('styles/destinations.css') }}">
     <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}">
-
 </head>
 <body>
     <nav>
@@ -27,6 +26,17 @@
 
     {% block body %}{% endblock %}
 
+    {% block footer %}
+    <footer class="footer">
+        <div>
+            <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+        </div>
+        <div class="blocsite">
+            <a class="textesite" href="https://rossignol86.github.io/FranckRossignol/" target="_blank">Franck Rossignol - Consulter mon site</a>
+        </div>
+    </footer>
+    {% endblock %}
+
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
@@ -34,7 +44,5 @@
     {% block javascripts %}
         {{ encore_entry_script_tags('app') }}
     {% endblock %}
-
-
 </body>
 </html>
